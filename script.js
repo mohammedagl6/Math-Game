@@ -53,7 +53,7 @@ function App(){
     }
     
     return(
-    <>
+    <main>
         <div className={"main-ui" + (mistakes==3||score==10 ? " blurred": "")}>
     <p className={"problem" + (showError==true?" animate-wrong":"")}>{currentProblem.numberOne} {currentProblem.operator} {currentProblem.numberTwo}</p>
   
@@ -74,7 +74,7 @@ function App(){
       <button ref={resetButton} onClick={resetGame} className="reset-button">Start Over</button>
     </div>
   </div>
-    </>
+    </main>
     )
   }
   
